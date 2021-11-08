@@ -1,4 +1,4 @@
-from converter.translater.alphabet import Cyrillic
+from translater.alphabet import Cyrillic
 
 
 def cyrillic_to_latin_doc(doc):

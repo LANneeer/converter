@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from converter.core.views import index, translate
+from core.views import index, translate
 
 urlpatterns = [
     path('admin/', admin.site.urls),

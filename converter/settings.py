@@ -12,9 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Application definition
@@ -26,7 +24,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'converter.core.apps.CoreConfig',
+    'core.apps.CoreConfig',
     'rest_framework',
 ]
 
@@ -40,7 +38,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'converter.converter.urls'
+ROOT_URLCONF = 'converter.urls'
 
 TEMPLATES = [
     {
@@ -58,7 +56,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'converter.converter.wsgi.application'
+WSGI_APPLICATION = 'converter.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -109,9 +107,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
-STATICFILES_DIRS = [
-    os.path.join(PROJECT_DIR, "static"),
-]
+STATICFILES_DIRS = [BASE_DIR]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
@@ -122,6 +118,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 try:
-    from converter.converter.local import *
+    from converter.local import *
 except ImportError:
-    from converter.converter.prod import *
+    from converter.prod import *
+

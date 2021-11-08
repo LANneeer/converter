@@ -7,8 +7,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
-PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATIC_ROOT = 'static'
-STATICFILES_DIRS = [
-    os.path.join(PROJECT_DIR, "static"),
-]
+STATICFILES_DIRS = [BASE_DIR]

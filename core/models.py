@@ -1,5 +1,5 @@
 from django.db import models
-from converter.utils.paths import document_path
+from utils.paths import document_path
 
 #
 # class IPAuth(models.Model):
