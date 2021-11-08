@@ -1,0 +1,18 @@
+#bot requirements
+aiogram~=2.12
+environs~=8.0.0
+
+#django+ requirements
+django==3.2.5
+djangorestframework==3.12.4
+asgiref~=3.4.1
+celery~=5.1.2
+flower~=1.0.0
+redis~=3.5.3
+django-celery-results==2.2.0
+django-celery-beat==2.2.0
+
+#additional requirements
+aiohttp~=3.7.4
+requests~=2.25.1
+psycopg2-binary~=2.9.1

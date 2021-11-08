@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Converter</title>
+    <link rel="shortcut icon" href="{% static 'img/icon.png'%}" type="image/png">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header-inner">
+            <div class="logo">
+                <span><a class="logo" href="/">Converter</a></span>
+            </div>
+            <div class="lang">
+                <ul class="lang_list">
+                    <li class="lang__item">
+                        <a class="lang__link" href="/?lang=kz">KZ</a>
+                    </li>
+                    <li class="lang__item">
+                        <a class="lang__link" href="/?lang=ru">RU</a>
+                    </li>
+                    <li class="lang__item">
+                        <a class="lang__link" href="/?lang=en">EN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="welcome__text">
+        <p>Сайт создал ученик 11 "В" класса 12 школы, города Актау, Илик Темирлан, в рамках реализации проекта "Рухани жангыру" для помощи в адаптации во время переходного периода перевода казахского алфавита с кириллицы на латиницу</p>
+    </div>
+    <div class="proj_img">
+        <img class="proj_img" src="{% static 'img/ruchani.jpeg'%}" alt="Рухани Жангыру">
+    </div>
+    <div class="translator">
+        <div class="translator__head">
+            <div class="translator__left-side">
+                <form action="/" class="upload-form">
+                    <input id="file" type="file" class="translator__upload">
+                    <label class="upload-label" for="file">Document</label>
+                </form>
+            </div>
+            <div class="translator__center-side">
+                <button type="submit" class="translator__translate-btn" form="translate-form">Convert</button>
+            </div>
+            <div class="translator__right-side">
+
+            </div>
+        </div>
+        <div class="translator__body">
+            <form action="/" id="translate-form" method="get">
+                <label>
+                    <textarea class="translator__textarea" name="from" cols="30" rows="10"></textarea>
+                </label>
+                <label>
+                    <textarea class="translator__textarea" name="to" cols="30" rows="10"></textarea>
+                </label>
+            </form>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="links"><a class="links" href="{% static 'files/recension.pdf'%}" target="_blank">Рецензии</a></div>
+            <div class="name"></div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="{% static 'script/script.js'%}"></script>
+</body>
+</html>

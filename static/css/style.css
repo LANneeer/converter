@@ -1,0 +1,165 @@
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    background-color: #6bddff;
+    color: #4a92fd;
+
+}
+
+.proj_img {
+    padding: 2px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo {
+    background-color: #ffdf63;
+    padding: 2px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 900;
+    color: #000000;
+    text-decoration: none;
+}
+
+.lang_list {
+    list-style: none;
+    display: flex;
+    font-size: 24px;
+    gap: 30px;
+}
+
+.lang__link {
+    background-color: #ffdf63d4;
+    padding: 1px;
+    border-radius: 4px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.welcome__text {
+    background-color: #fff9e1;
+    padding: 4px 18px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 4px black;
+    font-size: 20px;
+}
+
+.translator {
+    margin: 0 auto;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.translator__head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.upload-label {
+    position: absolute;
+    border: 1px solid black;
+    padding: 3px 5px;
+    top: 15px;
+    box-shadow: 0 0 2px black;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #ffeeaa;
+}
+
+#file {
+    position: absolute;
+    left: -9999px;
+}
+
+.translator__body {
+    width: 100%;
+}
+
+#translate-form {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.translator__body label {
+    width: 50%;
+}
+
+.translator__textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px;
+    resize: none;
+}
+
+.translator__translate-btn {
+    background-color: #ffe06a;
+    padding: 4px 18px;
+    border: none;
+    box-shadow: 0 0 4px black;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    padding: 15px 10px;
+    background-color: #083034;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.links {
+    position: relative;
+    color: #ffffffbf;
+    text-decoration: none;
+}
